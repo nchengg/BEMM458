@@ -1,0 +1,39 @@
+// Activity 1
+
+Item = Glass, Food, Container
+Destination = "Address"
+
+function drone()
+    input Item, Destination
+    check = FALSE
+
+    while check = FALSE;
+        if Item = Food OR Container
+            then transport()
+            check = TRUE
+        else 
+            return("Chemical container and food must not be left together unsupervised)
+            input Item, Destination
+
+
+// Activity 2
+
+Customers = B2B, B2C
+Piles = A, B
+fileOpened = FALSE
+fileAmount = count()
+
+
+function access();
+    fileAmount = fileAmount - 1
+
+    if fileAmount = 0 then
+        fileOpened = TRUE 
+
+while fileOpened = FALSE;
+    access()
+    if Customers = B2B then
+        A = []
+    else
+        B = []
+
