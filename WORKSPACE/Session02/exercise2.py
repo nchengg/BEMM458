@@ -145,6 +145,12 @@ dimensions = (1920, 1080)
 for i in dimensions:
     print(i)
 
+# dimensions[0] = 1280  # This will cause an error
+dimensions = (1280, 720)
+print(dimensions)
+
+
+
 # ======================================
 # 10. Code Styling (PEP 8)
 # --------------------------------------
@@ -164,6 +170,8 @@ for i in dimensions:
 #   4. Creates a tuple of movie ratings (1–5) and prints the average rating.
 #   5. Ensures your program follows PEP 8 guidelines.
 
+import random
+
 movies = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 
 movies.sort()
@@ -176,3 +184,4 @@ ratings = (random.randint(1, 5) for _ in range(len(movies)))
 
 for movie in movies:
     print("Movie: ", movie , ", rating: ", next(ratings))
+
