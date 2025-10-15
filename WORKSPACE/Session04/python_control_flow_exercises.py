@@ -217,6 +217,8 @@ def confirmUsers():
     for user in confirmed_users:
         print(user)
 
+confirmUsers()
+
 # ==========================================
 # Final Challenge: Interactive Program
 # ------------------------------------------
@@ -241,5 +243,5 @@ def cafeMenu():
         else:
             print("Sorry, we don't have that.")
 
-cafeMenu()
+
 # ==========================================
