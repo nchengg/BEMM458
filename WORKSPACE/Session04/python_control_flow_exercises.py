@@ -85,6 +85,8 @@ def checkFruitAvailability():
     else:
         print("Sorry, we don't have that.")
 
+checkFruitAvailability()
+
 # ==========================================
 # Exercise 5: Dictionaries - Basics
 # ------------------------------------------
@@ -216,8 +218,6 @@ def confirmUsers():
     print("All users have been confirmed:")
     for user in confirmed_users:
         print(user)
-
-confirmUsers()
 
 # ==========================================
 # Final Challenge: Interactive Program
