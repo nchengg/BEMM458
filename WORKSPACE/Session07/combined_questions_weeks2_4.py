@@ -27,6 +27,35 @@
 # 5. (Extension) Use a conditional to print whether the average
 #    attendance across the year was above 90%.
 
+monthly_attendance = [92, 88, 85, 90, 94, 89, 91, 93, 87, 95, 90, 92]
+# 1.
+attendance_decimal = [att / 100 for att in monthly_attendance]
+attendance_decimal = ["{:.2f}".format(att) for att in attendance_decimal]
+print("Attendance in decimal form:", attendance_decimal)
+
+# 2.
+second_term_attendance = monthly_attendance[2:6]
+print("Second term attendance (March–June):", second_term_attendance)
+
+# 3.
+attendance_changes = []
+for i in range(1, len(monthly_attendance)):
+    change = monthly_attendance[i] - monthly_attendance[i - 1]
+    attendance_changes.append(change)
+print("Attendance changes month-to-month:", attendance_changes)
+
+# 4.
+attendance_tuple = tuple(monthly_attendance)
+print("Attendance as tuple:", attendance_tuple)
+# Tuples are immutable, hence used for history storage to prevent accidental edits.
+
+# 5.
+average_attendance = sum(monthly_attendance) / len(monthly_attendance)
+if average_attendance > 90:
+    print("Average attendance was above 90%.")
+else:
+    print("Average attendance was 90% or below.")
+
 
 # ----------------------------------------------------------
 # Question 2 – Control Flow & Dictionaries: Fitness Tracker
