@@ -124,7 +124,7 @@ class Student:
         avg = self.average_grade()
         return avg is not None and avg >= 50
     
-# Creating student objects
+# Creating student objects (Generated)
 student1 = Student("Alice", "Smith", "S001")
 student1.add_grade(85)
 student1.add_grade(90)
@@ -138,7 +138,7 @@ student3.add_grade(30)
 student3.add_grade(40)
 student3.add_grade(50)
 
-# Storing students in a list
+#
 students = [student1, student2, student3]
 
 print("All Students:")
