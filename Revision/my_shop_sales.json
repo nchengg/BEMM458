@@ -1,0 +1,17 @@
+[
+    {
+        "product": "Coffee",
+        "amount": 3.5,
+        "quantity": 10
+    },
+    {
+        "product": "Tea",
+        "amount": 2.5,
+        "quantity": 15
+    },
+    {
+        "product": "Cake",
+        "amount": 4.0,
+        "quantity": 5
+    }
+]
